@@ -1,3 +1,7 @@
+// Problem: Find the number of bits set to 1 for a given number
+
+// Key pieces of learning: You can isolate the lowest bit set to one with num & ~(num - 1)
+
 /*
 The initial time complexity is O(n) where n is the binary representation of the
 passed in number. The initial space complexity is O(1) because we're storing a
