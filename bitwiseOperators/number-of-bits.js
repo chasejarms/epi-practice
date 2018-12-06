@@ -1,6 +1,8 @@
 // Problem: Find the number of bits set to 1 for a given number
 
 // Key pieces of learning: You can isolate the lowest bit set to one with num & ~(num - 1)
+// Subtracting one from a number changes the right most bit set to one to be zero. The lower
+// bits that are set to zero become one.
 
 /*
 The initial time complexity is O(n) where n is the binary representation of the
