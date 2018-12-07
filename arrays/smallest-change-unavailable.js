@@ -26,7 +26,7 @@ function smallestCoinsAvailable(coins) {
             continue;
         }
 
-        if (currentCoin > coinTotal) {
+        if (currentCoin > coinTotal + 1) {
             return coinTotal + 1;
         } else {
             coinTotal += currentCoin;
@@ -61,6 +61,9 @@ function quickSortCoins(coins) {
 
 const result1 = smallestCoinsAvailable([1,1,10,5,25,1,1,1]);
 console.log(result1);
+
+const result2 = smallestCoinsAvailable([12,2,1,15,2,4]);
+console.log(result2);
 
 
 
